@@ -3,20 +3,72 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    font-family: fantasy;
-    background: #06beb6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-size: 2rem;
+    background-color: #313949;
+    font-family: Quicksand;
+    font-style: normal;
     font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
     color: #ffffff;
 }
 
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .calculation, .sumClass {
     display: flex;
 }
 
-p {
-    margin: 5px;
+.calculation, .sumClass {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputContainer {
+
+    display: flex;
+    align-items: center;
+}
+
+.input {
+   width: 200px;
+   height: 40px;
+   left: 24px;
+   top: 216px;
+   opacity: 85%;
+   font-family: Quicksand;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 40px;
+   margin: 10px;
+}
+
+button {
+    width: 40px;
+    color: white;
+    height: 40px;
+    left: 273px;
+    top: 330px;
+    background: linear-gradient(45.33deg, #2C3341 15.46%, #313949 72.37%);
+    border: 2px solid rgba(108, 112, 120, 0.5);
+    box-sizing: border-box;
+    box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262C37;
+    margin: 3px;
+}
