@@ -9,11 +9,15 @@ body {
     font-weight: bold;
     font-size: 36px;
     line-height: 45px;
-    color: #ffffff;
+    color: #f4eb00;
 }
 
 ::-webkit-scrollbar {
     visibility: hidden;
+}
+
+#calc, #sumP {
+    margin-left: 20px;
 }
 
 .container {
@@ -60,9 +64,9 @@ input::-webkit-inner-spin-button {
    margin: 10px;
 }
 
-button {
+.button {
     width: 40px;
-    color: white;
+    color: #f4eb00;
     height: 40px;
     left: 273px;
     top: 330px;
@@ -71,4 +75,43 @@ button {
     box-sizing: border-box;
     box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262C37;
     margin: 3px;
+}
+
+
+.changeBtn {
+    width: 180px;
+    color: #f4eb00;
+    height: 60px;
+    left: 273px;
+    top: 330px;
+    background: linear-gradient(45.33deg, #2C3341 15.46%, #313949 72.37%);
+    border: 2px solid rgba(108, 112, 120, 0.5);
+    box-sizing: border-box;
+    box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262C37;
+    margin-top: 50px;
+    font-size: 1.3rem;
+}
+
+.changeBtn:hover, .button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: #ffffff 0 -3px 10px inset;
+    transform: scale(1.125);
+}
+
+
+.changeBtn:active, .button:active {
+  transform: scale(1.025);
+}
+
+.changeColorDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    
+}
+
+.changeColorDiv > p {
+    text-align: center;
 }

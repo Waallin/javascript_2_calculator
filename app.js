@@ -35,6 +35,7 @@ $(document).ready(function () {
                 calcText = $('#text').val();
                 $('#calc').append(calcText);
                 $('#text').val('')
+                $('#calc').css('font-family', 'cursive');
             }
         }
 
@@ -74,6 +75,7 @@ $(document).ready(function () {
         let reduce = (a, b) => a + b;
         let sum = (numbersAdded.reduce(reduce));
         $('#sumP').html(sum)
+        $('#sumP').css('font-family', 'cursive');
         $('#calc').html('');
         numbersAdded = [];
 
@@ -127,6 +129,17 @@ $(document).ready(function () {
         }
     })
 
+    
+    //En knapp som genererar random bakgrundsfärg i bodyn. Dubbelklick ger tillbaka orginal-bakgrunden
+    $('#changeBtn').click(function () {
+        let random = Math.floor(Math.random() * 999999)
+
+        $('body').css("background-color", "#" + random);
+    })
+
+    $('#changeBtn').dblclick(function () {
+        $('body').css('background-color', '#313949')
+    })
 
 });
 
@@ -139,8 +152,9 @@ tömma all DOM efter uträkningen fixad
 
 utseende fixad
 
-Annat textsnitt på text i dom? 
-andra finesser?
+Annat textsnitt på text i DOM? 
+
+andra finesser? Random-backgrund fixad fixad
 
 VG - uppgift fixad
 
