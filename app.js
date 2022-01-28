@@ -152,9 +152,9 @@ tömma all DOM efter uträkningen fixad
 
 utseende fixad
 
-Annat textsnitt på text i DOM? 
+Annat textsnitt på text i DOM? fixad genom jquery i app.js
 
-andra finesser? Random-backgrund fixad fixad
+andra finesser? Random-backgrund fixad 
 
 VG - uppgift fixad
 
