@@ -3,6 +3,13 @@
 $(document).ready(function () {
 
 
+    //Gör så att bara siffror får skrivas 
+    $("#text").keypress(function (e) {
+
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                  return false;
+       }
+      });
 
     let numbersAdded = []; //array att samla tal
 
